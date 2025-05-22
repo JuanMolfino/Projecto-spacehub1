@@ -17,17 +17,30 @@
 
 
 /* media query body mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     body{
         background-color: black;
     }
     .logo{
         max-height: 60%;
     }
-    footer{
-        position: absolute bottom;
-        margin-top: 40em ;
+     
+    .footer {
+        position: relative bottom;
+        padding: 15px 0; 
+        font-size: 0.9rem; 
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+
     }
+
+.main-index{
+    min-height: 230vh;
+}
+
 }
 
 
@@ -53,8 +66,8 @@
     height: 20em;
     margin: 0 auto;
 }
-.main {
-    height: 70vh;
+.main-index {
+    height: 100vh;
 }
 
 header {
@@ -157,7 +170,7 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 10px 0;
-   
+    margin-top: 20em ;
 }
 
 /* estilo main marte */
@@ -325,4 +338,8 @@ footer {
     display: flex;
     align-items: center;    
     justify-content: center;
+}
+.imagencard{
+   width: 280px;
+   height: 200px;
 }
