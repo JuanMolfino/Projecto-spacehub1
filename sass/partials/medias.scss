@@ -1,0 +1,76 @@
+/* media query body mobile */
+@media only screen and (max-width: 750px) {
+    body{
+        background-color: black;
+    }
+    .logo{
+        max-height: 60%;
+    }
+     
+    .footer {
+        position: relative bottom;
+        padding: 15px 0; 
+        font-size: 0.9rem; 
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+
+    }
+
+.main-index{
+    min-height: 230vh;
+}
+
+}
+/* james webb */
+
+@media only screen and (max-width: 600px) {
+    .box_galeria{
+    width: 90%;
+    display: grid;
+    grid-template-areas:
+        "g1"
+        "web"
+        "g2"
+        "g3"
+        "g4"
+        "g5"
+        "g6"
+        "g7"
+        "g8"
+        "g9"
+       "g10" 
+       "g11"
+        ;
+}
+/* space x estilos */
+}
+
+
+@media only screen and (max-width: 845px) {
+    .logo_spacex_mobile{
+        display: flex;
+        max-width: 300px ;
+    }
+    .logo-spacex{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .img-spacex1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 25rem;
+        height: 25rem;
+    }
+}
+}
+@media only screen and (max-width: 600px) {
+    .logo-nasa{
+        display: none;
+    }
+}
