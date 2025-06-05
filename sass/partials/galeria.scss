@@ -1,5 +1,7 @@
 @use "./variables.scss";
 
+.james{ 
+    
 .galeria_webb {
     display: flex;
     width: 100%;
@@ -7,20 +9,7 @@
     justify-content: center;
     align-items: center;
 
-    .box_galeria {
-        width: 90%;
-        max-width: 1900px;
-        gap: 10px;
-        display: grid;
-        grid-template-areas:
-            "g1 web g5"
-            "g3 g3 g5"
-            "g4 g11 g5"
-            "g2 g6 g6"
-            "g7 g7 g7"
-            "g10 g10 g8"
-            "g9 g9 g8"
-        ;
+   
          img{
             /*si no es 99% no funciona por algun motivo que desconozco*/
             width: 99%;
@@ -78,7 +67,6 @@
         }
     }
 
-
-
-
 }
+
+
