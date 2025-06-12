@@ -276,7 +276,7 @@ footer {
 }
 
 /* media query body mobile */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
   body {
     background: linear-gradient(108deg, rgb(43, 42, 42) 21%, rgb(26, 25, 25) 100%, rgb(0, 0, 0) 100%, rgb(18, 16, 16) 100%);
   }
@@ -292,6 +292,7 @@ footer {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    margin-top: 21.25rem;
   }
   .footer-indx {
     margin-top: 300%;
@@ -300,6 +301,7 @@ footer {
     min-height: 100%;
   }
   .bienvenido {
+    max-width: 80vw;
     padding-top: 30%;
   }
 }
