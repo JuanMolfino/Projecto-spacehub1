@@ -1,0 +1,95 @@
+@use "./_variables.scss" as*;
+body{
+     background: linear-gradient(108deg,rgba(43, 42, 42, 1) 21%, rgba(26, 25, 25, 1) 100%, rgba(0, 0, 0, 1) 100%, rgba(18, 16, 16, 1) 100%);
+
+    h1{
+     
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-size: $titulo;
+    
+    }
+.logo-spacex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo-spacex{
+    max-width: 1920px;
+    max-height: 500px;
+    animation: entrada 1s;
+    @keyframes entrada  {
+        from{
+            scale: 0.5;
+            opacity: 0.5
+        }
+        to{
+            scale: 1;
+            opacity: 1;
+        }        
+    }
+    
+
+}
+
+
+}
+.img-spacex1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 50%;
+        max-height: fit-content;
+    }
+}
+.txt-spacex-1{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    font-size: $mid ;
+}
+.txt-spacex-2{
+    @extend .txt-spacex-1
+}
+}
+.logo-nasa{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 40rem;
+        width: 50rem;
+        animation: entrada 1s;
+    }
+}
+
+.txt-nasa-1{
+    @extend .txt-spacex-1
+}
+.img-nasa-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 50%;
+        max-height: fit-content;
+    }
+}
+.logo-china{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 40rem;
+        width: 40rem;
+        max-width: 90%;
+        max-height: 50% ;
+        animation: entrada 1s;
+    }
+
+}
+.img-china-1{
+    @extend .img-nasa-1
+}

@@ -1,0 +1,108 @@
+/* media query body mobile */
+@media only screen and (max-width: 750px) {
+    body{
+       background: linear-gradient(108deg,rgba(43, 42, 42, 1) 21%, rgba(26, 25, 25, 1) 100%, rgba(0, 0, 0, 1) 100%, rgba(18, 16, 16, 1) 100%);
+    }
+    .logo{
+        max-height: 60%;
+    }
+     
+    .footer {
+        position: relative bottom;
+        padding: 15px 0; 
+        font-size: 0.9rem; 
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        
+    }
+    .footer-indx{
+        margin-top: 300%;
+    }
+.main-index{
+    min-height: 100%;
+}
+.bienvenido{
+
+    padding-top: 30% ;
+}
+}
+/* james webb */
+
+@media only screen and (max-width: 600px) {
+    .box_galeria{
+    width: 90%;
+    display: grid;
+    grid-template-areas:
+        "g1"
+        "web"
+        "g2"
+        "g3"
+        "g4"
+        "g5"
+        "g6"
+        "g7"
+        "g8"
+        "g9"
+       "g10" 
+       "g11"
+        ;
+        gap: 1.625rem;
+         ;
+}
+/* space x estilos */
+}
+
+@media only screen and (max-width: 600px) {
+    .logo_spacex_mobile{
+        display: flex;
+        max-width: 300px ;
+    }
+    .logo-spacex{
+        display: none;
+    }
+}
+/* problema con cascada arreglado usando mas media querys*/
+@media only screen and (min-width: 1000px){
+    .logo_spacex_mobile{
+        display: none;
+    }
+     .box_galeria {
+        width: 90%;
+        max-width: 1900px;
+        gap: 10px;
+        display: grid;
+        grid-template-areas:
+            "g1 web g5"
+            "g3 g3 g5"
+            "g4 g11 g5"
+            "g2 g6 g6"
+            "g7 g7 g7"
+            "g10 g10 g8"
+            "g9 g9 g8"
+        ;
+     }
+     
+}
+@media only screen and (max-width: 600px) {
+    .img-spacex1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 25rem;
+        height: 25rem;
+    }
+}
+main{
+    margin-top: 30%;
+}
+}
+@media only screen and (max-width: 600px) {
+    .logo-nasa{
+        display: none;
+    }
+    
+}
