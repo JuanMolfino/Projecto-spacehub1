@@ -15,12 +15,12 @@
 }
 
 .body {
-  background: linear-gradient(108deg, rgb(43, 42, 42) 21%, rgb(26, 25, 25) 100%, rgb(0, 0, 0) 100%, rgb(18, 16, 16) 100%);
+  background-image: url(../imagenes/background.png);
   min-height: 100vh;
   color: white;
 }
 .body .bodyindx {
-  background: linear-gradient(108deg, rgb(43, 42, 42) 21%, rgb(26, 25, 25) 100%, rgb(0, 0, 0) 100%, rgb(18, 16, 16) 100%);
+  background-image: url(../imagenes/background.png);
   min-height: 100vh;
   color: white;
   background-size: cover;
@@ -124,7 +124,7 @@ body .txt-spacex-1, body .txt-nasa-1, body .txt-spacex-2 {
   display: flex;
   width: 80%;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .logo-nasa {
   display: flex;
@@ -239,121 +239,106 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.james .galeria_webb img {
+.james .galeria_webb .box_galeria {
+  width: 90%;
+  max-width: 1900px;
+  gap: 10px;
+  display: grid;
+  grid-template-areas: "g1 web g5" "g3 g3 g5" "g4 g11 g5" "g2 g6 g6" "g7 g7 g7" "g10 g10 g8" "g9 g9 g8";
+}
+.james .galeria_webb .box_galeria img {
   /*si no es 99% no funciona por algun motivo que desconozco*/
   width: 99%;
   height: 100%;
 }
-.james .galeria_webb .g1 {
+.james .galeria_webb .box_galeria .g1 {
   grid-area: g1;
 }
-.james .galeria_webb .g2 {
+.james .galeria_webb .box_galeria .g2 {
   grid-area: g2;
 }
-.james .galeria_webb .g3 {
+.james .galeria_webb .box_galeria .g3 {
   grid-area: g3;
 }
-.james .galeria_webb .g5 {
+.james .galeria_webb .box_galeria .g5 {
   grid-area: g5;
 }
-.james .galeria_webb .g6 {
+.james .galeria_webb .box_galeria .g6 {
   grid-area: g6;
 }
-.james .galeria_webb .g7 {
+.james .galeria_webb .box_galeria .g7 {
   grid-area: g7;
 }
-.james .galeria_webb .g8 {
+.james .galeria_webb .box_galeria .g8 {
   grid-area: g8;
 }
-.james .galeria_webb .g9 {
+.james .galeria_webb .box_galeria .g9 {
   grid-area: g9;
 }
-.james .galeria_webb .g10 {
+.james .galeria_webb .box_galeria .g10 {
   grid-area: g10;
 }
-.james .galeria_webb .g11 {
+.james .galeria_webb .box_galeria .g11 {
   grid-area: g11;
+}
+.james .galeria_webb .box_galeria .g12 {
+  grid-area: g12;
+}
+.james .galeria_webb .box_galeria .g13 {
+  grid-area: g13;
 }
 
 /* media query body mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
   body {
     background: linear-gradient(108deg, rgb(43, 42, 42) 21%, rgb(26, 25, 25) 100%, rgb(0, 0, 0) 100%, rgb(18, 16, 16) 100%);
   }
-  .logo {
+  body .bodyindx .logo {
     max-height: 60%;
   }
-  .footer {
-    position: relative bottom;
-    padding: 15px 0;
-    font-size: 0.9rem;
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 21.25rem;
-  }
-  .footer-indx {
-    margin-top: 300%;
-  }
-  .main-index {
+  body .bodyindx .main-index {
     min-height: 100%;
   }
-  .bienvenido {
+  body .bodyindx .main-index .bienvenido {
     max-width: 80vw;
     padding-top: 30%;
   }
+  body .bodyindx .main-index .bienvenido h1 {
+    font-size: 2.5rem !important;
+  }
+  body .footer-indx {
+    margin-top: 110em;
+  }
 }
 /* james webb */
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 0px) and (max-width: 480px) {
   .box_galeria {
     width: 90%;
     display: grid;
-    grid-template-areas: "g1" "web" "g2" "g3" "g4" "g5" "g6" "g7" "g8" "g9" "g10" "g11";
+    grid-template-areas: "g1" "web" "g2" "g3" "g4" "g5" "g6" "g7" "g8" "g9" "g10" "g11" !important;
     gap: 1.625rem;
   }
-  /* space x estilos */
 }
-@media only screen and (max-width: 600px) {
-  .logo_spacex_mobile {
-    display: flex;
-    max-width: 300px;
-  }
+@media screen and (min-width: 0px) and (max-width: 480px) {
   .logo-spacex {
     display: none;
   }
-}
-/* problema con cascada arreglado usando mas media querys*/
-@media only screen and (min-width: 1000px) {
   .logo_spacex_mobile {
-    display: none;
+    display: flex;
+    max-width: 80vw;
   }
-  .box_galeria {
-    width: 90%;
-    max-width: 1900px;
-    gap: 10px;
-    display: grid;
-    grid-template-areas: "g1 web g5" "g3 g3 g5" "g4 g11 g5" "g2 g6 g6" "g7 g7 g7" "g10 g10 g8" "g9 g9 g8";
-  }
-}
-@media only screen and (max-width: 600px) {
-  .img-spacex1 {
+  .logo-nasa {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10em;
+    width: 100%;
+    height: 100%;
   }
-  .img-spacex1 img {
-    width: 25rem;
-    height: 25rem;
-  }
-  main {
-    margin-top: 30%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .logo-nasa {
-    display: none;
+  .logo-nasa img {
+    height: 100%;
+    width: 100%;
+    animation: entrada 1s;
   }
 }
 

@@ -9,12 +9,13 @@
 
 
 .body {
-    background: linear-gradient(108deg,rgba(43, 42, 42, 1) 21%, rgba(26, 25, 25, 1) 100%, rgba(0, 0, 0, 1) 100%, rgba(18, 16, 16, 1) 100%);
+    // background: linear-gradient(108deg,rgba(43, 42, 42, 1) 21%, rgba(26, 25, 25, 1) 100%, rgba(0, 0, 0, 1) 100%, rgba(18, 16, 16, 1) 100%);
+    background-image: url(../imagenes/background.png);
     min-height: 100vh;
     color: white;
 
     .bodyindx {
-       background: linear-gradient(108deg,rgba(43, 42, 42, 1) 21%, rgba(26, 25, 25, 1) 100%, rgba(0, 0, 0, 1) 100%, rgba(18, 16, 16, 1) 100%);
+       background-image: url(../imagenes/background.png);
         min-height: 100vh;
         color: white;
         background-size: cover;
