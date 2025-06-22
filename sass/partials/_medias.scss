@@ -1,0 +1,116 @@
+@use "./variables"as*;
+
+/* media query body mobile */
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    body {
+        background: linear-gradient(108deg, rgba(43, 42, 42, 1) 21%, rgba(26, 25, 25, 1) 100%, rgba(0, 0, 0, 1) 100%, rgba(18, 16, 16, 1) 100%);
+    h1{
+            font-size: $mid;
+        }
+        .img-marte{
+            width: 70%;
+        }
+        .bodyindx {
+            .logo {
+                max-height: 60%;
+            }
+
+            .main-index {
+                min-height: 100%;
+
+                .bienvenido {
+                    max-width: 80vw;
+                    padding-top: 30%;
+                    h1 {
+                        font-size: $mid !important;
+                    }
+                }
+            }  
+        }
+     
+        .footer-indx{
+        margin-top: 160em;
+        }   
+        
+    }
+}
+
+/* james webb */
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    .box_galeria {
+        width: 90%;
+        display: grid;
+        grid-template-areas:
+            "g1"
+            "web"
+            "g2"
+            "g3"
+            "g4"
+            "g5"
+            "g6"
+            "g7"
+            "g8"
+            "g9"
+            "g10"
+            "g11"
+            !important
+        ;
+        gap: 1.625rem;
+        ;
+    }
+}
+//media programas espaciales
+@media screen and (min-width: 0px) and (max-width:579px){
+    .logo-spacex{
+        display: none;
+    }
+    .logo_spacex_mobile{
+        display: flex;
+        max-width: 80vw;
+    }
+    .logo-nasa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    width: 100% ;
+    height: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+        animation: entrada 1s;
+    }
+    }
+    .footer-indx{
+        margin-top: 130em;
+        }   
+}
+//resposive tablet
+@media screen and (min-width: 580px) and (max-width: 1200px){
+    body{
+        background-size: cover;
+        background-repeat: repeat;
+
+    .logo_spacex_mobile{
+        display: none;
+    }
+    .logo-spacex{ 
+        max-width: 80vw !important;
+    }
+    .footer-indx{
+        margin-top: 100em;
+        }   
+      
+       }
+
+}
+@media screen and (min-width: 1201px){
+
+    .logo_spacex_mobile{
+        display: none;
+    }
+    .footer-indx{
+        margin-top: 30em;
+        }   
+}

@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/* tamaño fonts */
+/* imagenes reset*/
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.body {
+  background-image: url(../imagenes/background.png);
+  min-height: 100vh;
+  color: white;
+}
+.body .bodyindx {
+  background-image: url(../imagenes/background.png);
+  min-height: 100vh;
+  color: white;
+  background-size: cover;
+  background-repeat: repeat;
+}
+.body .bodyindx .main-index {
+  height: 100vh;
+}
+.body .bodyindx .main-index .imagencard {
+  width: 100%;
+  height: 100%;
+  max-width: 30rem;
+  max-height: 15rem;
+}
+.body .bodyindx .bienvenido {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+}
+.body .bodyindx .bienvenido h1 {
+  font-size: 6.25rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s ease-out forwards;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.body .bodyindx .intro {
+  font-size: large;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  word-spacing: 5px;
+  width: 50%;
+  margin: 0 auto;
+  margin: bottom 1em;
+  max-height: 8vh;
+}
+.body .bodyindx .intro .logo {
+  max-width: 100%;
+  height: 20em;
+  margin: 0 auto;
+}
+.body .bodyindx .intro .texto-intro {
+  max-height: 80vh;
+}
+.body .bodyindx .intro .texto-intro .boton-marte {
+  background-color: black;
+}
+.body .bodyindx .intro .texto-intro .boton-marte a {
+  background-color: black;
+}
+
+body {
+  background: linear-gradient(108deg, rgb(43, 42, 42) 21%, rgb(26, 25, 25) 100%, rgb(0, 0, 0) 100%, rgb(18, 16, 16) 100%);
+}
+body h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6.25rem;
+}
+body .logo-spacex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .logo-spacex-box .logo-spacex {
+  max-width: 1920px;
+  max-height: 500px;
+  animation: entrada 1s;
+}
+@keyframes entrada {
+  from {
+    scale: 0.5;
+    opacity: 0.5;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+body .img-spacex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .img-spacex1 img {
+  max-width: 50%;
+  max-height: fit-content;
+}
+body .txt-spacex-1, body .txt-nasa-1, body .txt-spacex-2 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+.logo-nasa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-nasa img {
+  height: 40rem;
+  width: 50rem;
+  animation: entrada 1s;
+}
+
+.img-nasa-1, .img-china-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-nasa-1 img, .img-china-1 img {
+  max-width: 50%;
+  max-height: fit-content;
+}
+
+.logo-china {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-china img {
+  height: 40rem;
+  width: 40rem;
+  max-width: 90%;
+  max-height: 50%;
+  animation: entrada 1s;
+}
+
+header {
+  height: 15vh;
+}
+header .h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 400%;
+  font-weight: 400;
+}
+header .navbar {
+  background-color: #000;
+}
+header .navbar .navbar-brand {
+  font-size: x-large;
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+  text-decoration: underline;
+}
+header .navbar .actual a {
+  text-decoration: underline;
+}
+header .navbar .nav-item a {
+  margin-right: 3rem;
+  margin-left: 3rem;
+  font-size: large;
+  color: white;
+}
+header .navbar .nav-item a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+header .dropdown-menu {
+  background-color: black;
+}
+header .dropdown-menu .dropdown-item:hover {
+  background-color: black;
+  max-width: 10%;
+  transform: scale(1.1);
+}
+
+footer {
+  position: relative bottom;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 20em;
+}
+
+.body_marte {
+  background: #c23c02;
+  background: radial-gradient(circle, rgb(194, 60, 2) 43%, rgb(18, 16, 16) 100%);
+}
+.body_marte .main-marte {
+  font-size: large;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  word-spacing: 5px;
+  width: 80%;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+  gap: 20px;
+}
+.body_marte .main-marte .main-marte ol li strong {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.james .galeria_webb {
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+.james .galeria_webb .box_galeria {
+  width: 90%;
+  max-width: 1900px;
+  gap: 10px;
+  display: grid;
+  grid-template-areas: "g1 web g5" "g3 g3 g5" "g4 g11 g5" "g2 g6 g6" "g7 g7 g7" "g10 g10 g8" "g9 g9 g8";
+}
+.james .galeria_webb .box_galeria img {
+  /*si no es 99% no funciona por algun motivo que desconozco*/
+  width: 99%;
+  height: 100%;
+}
+.james .galeria_webb .box_galeria .g1 {
+  grid-area: g1;
+}
+.james .galeria_webb .box_galeria .g2 {
+  grid-area: g2;
+}
+.james .galeria_webb .box_galeria .g3 {
+  grid-area: g3;
+}
+.james .galeria_webb .box_galeria .g5 {
+  grid-area: g5;
+}
+.james .galeria_webb .box_galeria .g6 {
+  grid-area: g6;
+}
+.james .galeria_webb .box_galeria .g7 {
+  grid-area: g7;
+}
+.james .galeria_webb .box_galeria .g8 {
+  grid-area: g8;
+}
+.james .galeria_webb .box_galeria .g9 {
+  grid-area: g9;
+}
+.james .galeria_webb .box_galeria .g10 {
+  grid-area: g10;
+}
+.james .galeria_webb .box_galeria .g11 {
+  grid-area: g11;
+}
+.james .galeria_webb .box_galeria .g12 {
+  grid-area: g12;
+}
+.james .galeria_webb .box_galeria .g13 {
+  grid-area: g13;
+}
+
+/* media query body mobile */
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  body {
+    background: linear-gradient(108deg, rgb(43, 42, 42) 21%, rgb(26, 25, 25) 100%, rgb(0, 0, 0) 100%, rgb(18, 16, 16) 100%);
+  }
+  body h1 {
+    font-size: 2.5rem;
+  }
+  body .img-marte {
+    width: 70%;
+  }
+  body .bodyindx .logo {
+    max-height: 60%;
+  }
+  body .bodyindx .main-index {
+    min-height: 100%;
+  }
+  body .bodyindx .main-index .bienvenido {
+    max-width: 80vw;
+    padding-top: 30%;
+  }
+  body .bodyindx .main-index .bienvenido h1 {
+    font-size: 2.5rem !important;
+  }
+  body .footer-indx {
+    margin-top: 160em;
+  }
+}
+/* james webb */
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .box_galeria {
+    width: 90%;
+    display: grid;
+    grid-template-areas: "g1" "web" "g2" "g3" "g4" "g5" "g6" "g7" "g8" "g9" "g10" "g11" !important;
+    gap: 1.625rem;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 579px) {
+  .logo-spacex {
+    display: none;
+  }
+  .logo_spacex_mobile {
+    display: flex;
+    max-width: 80vw;
+  }
+  .logo-nasa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    width: 100%;
+    height: 100%;
+  }
+  .logo-nasa img {
+    height: 100%;
+    width: 100%;
+    animation: entrada 1s;
+  }
+  .footer-indx {
+    margin-top: 130em;
+  }
+}
+@media screen and (min-width: 580px) and (max-width: 1200px) {
+  body {
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  body .logo_spacex_mobile {
+    display: none;
+  }
+  body .logo-spacex {
+    max-width: 80vw !important;
+  }
+  body .footer-indx {
+    margin-top: 100em;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .logo_spacex_mobile {
+    display: none;
+  }
+  .footer-indx {
+    margin-top: 30em;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

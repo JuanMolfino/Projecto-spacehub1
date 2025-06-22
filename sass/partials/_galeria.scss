@@ -1,0 +1,92 @@
+@use "./_variables.scss";
+
+.james{ 
+    
+.galeria_webb {
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+.box_galeria {
+        width: 90%;
+        max-width: 1900px;
+        gap: 10px;
+        display: grid;
+        grid-template-areas:
+            "g1 web g5"
+            "g3 g3 g5"
+            "g4 g11 g5"
+            "g2 g6 g6"
+            "g7 g7 g7"
+            "g10 g10 g8"
+            "g9 g9 g8"
+            
+        ;
+   
+         img{
+            /*si no es 99% no funciona por algun motivo que desconozco*/
+            width: 99%;
+            height: 100%;
+
+       }
+       .g1 {
+            grid-area: g1;
+            
+        }
+
+        .g2 {
+            grid-area: g2;
+            
+        }
+
+        .g3 {
+            grid-area: g3;
+            
+        }
+
+        .g5 {
+            grid-area: g5;
+           
+        }
+
+        .g6 {
+            grid-area: g6;
+           
+        }
+
+        .g7 {
+            grid-area: g7;
+            
+        }
+
+        .g8 {
+            grid-area: g8;
+            
+        }
+
+        .g9 {
+            grid-area: g9;
+           
+        }
+
+        .g10 {
+            grid-area: g10;
+           
+        }
+
+        .g11 {
+            grid-area: g11;
+            
+        }
+        .g12{
+            grid-area: g12;
+        }
+        .g13{
+            grid-area: g13;
+        }
+    }
+     }
+}
+
+
